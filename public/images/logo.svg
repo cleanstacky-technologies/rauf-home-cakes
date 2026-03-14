@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 72" fill="none">
+  <!-- R — large bold black serif -->
+  <text x="0" y="56"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="62"
+    font-weight="900"
+    fill="#1C0A00"
+  >R</text>
+
+  <!-- H — overlapping, champagne gold -->
+  <text x="30" y="52"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="54"
+    font-weight="900"
+    fill="#C9A96E"
+  >H</text>
+
+  <!-- Divider line -->
+  <line x1="90" y1="14" x2="90" y2="60" stroke="#D6C4A0" stroke-width="1"/>
+
+  <!-- "Rauf Home" -->
+  <text x="100" y="36"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="17"
+    font-weight="700"
+    fill="#1C0A00"
+    letter-spacing="0.8"
+  >Rauf Home</text>
+
+  <!-- "CAKES" in gold with wide tracking -->
+  <text x="101" y="56"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="12"
+    font-weight="500"
+    fill="#C9A96E"
+    letter-spacing="5"
+  >CAKES</text>
+</svg>

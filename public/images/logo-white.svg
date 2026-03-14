@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 72" fill="none">
+  <!-- R — white (for dark footer background) -->
+  <text x="0" y="56"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="62"
+    font-weight="900"
+    fill="#FFFFFF"
+  >R</text>
+
+  <!-- H — champagne gold (stays gold on dark) -->
+  <text x="30" y="52"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="54"
+    font-weight="900"
+    fill="#C9A96E"
+  >H</text>
+
+  <!-- Divider line -->
+  <line x1="90" y1="14" x2="90" y2="60" stroke="#6B4F3A" stroke-width="1"/>
+
+  <!-- "Rauf Home" in white -->
+  <text x="100" y="36"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="17"
+    font-weight="700"
+    fill="#F5ECD7"
+    letter-spacing="0.8"
+  >Rauf Home</text>
+
+  <!-- "CAKES" in gold -->
+  <text x="101" y="56"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="12"
+    font-weight="500"
+    fill="#C9A96E"
+    letter-spacing="5"
+  >CAKES</text>
+</svg>

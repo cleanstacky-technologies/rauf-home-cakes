@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply font-sans text-chocolate-800 bg-warm-50;
+  }
+
+  ::selection {
+    @apply bg-rose-gold/20 text-chocolate-900;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-5 sm:px-8 lg:px-16 xl:px-24;
+  }
+
+  .section-spacing {
+    @apply py-16 sm:py-20 lg:py-28;
+  }
+
+  .heading-xl {
+    @apply font-serif text-[2.1rem] sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-[1.1];
+  }
+
+  .heading-lg {
+    @apply font-serif text-[1.85rem] sm:text-4xl lg:text-5xl font-bold tracking-tight leading-tight;
+  }
+
+  .heading-md {
+    @apply font-serif text-2xl sm:text-3xl font-semibold tracking-tight;
+  }
+
+  .heading-sm {
+    @apply font-serif text-xl sm:text-2xl font-semibold;
+  }
+
+  .body-lg {
+    @apply text-lg sm:text-xl leading-relaxed text-chocolate-400;
+  }
+
+  .body-md {
+    @apply text-base leading-relaxed text-chocolate-400;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-8 py-3.5 bg-chocolate-500 text-white font-medium rounded-full
+           hover:bg-chocolate-600 active:bg-chocolate-700 transition-all duration-300
+           hover:shadow-lg hover:shadow-chocolate-500/20 active:scale-[0.98];
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-8 py-3.5 border-2 border-chocolate-500 text-chocolate-500
+           font-medium rounded-full hover:bg-chocolate-500 hover:text-white transition-all duration-300
+           active:scale-[0.98];
+  }
+
+  .btn-rose {
+    @apply inline-flex items-center justify-center px-8 py-3.5 bg-rose-gold text-white font-medium rounded-full
+           hover:bg-rose-muted active:bg-rose-gold/80 transition-all duration-300
+           hover:shadow-lg hover:shadow-rose-gold/20 active:scale-[0.98];
+  }
+
+  .card-hover {
+    @apply transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-chocolate-100/50;
+  }
+
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-sm border border-white/60 rounded-2xl shadow-sm;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-chocolate-500 via-rose-gold to-chocolate-400 bg-clip-text text-transparent;
+  }
+}
+
+/* Hide scrollbar for mobile filter chips */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-warm-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-chocolate-200 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-chocolate-300;
+}
+
+/* Modal backdrop */
+.modal-backdrop {
+  animation: backdropFadeIn 0.2s ease-out;
+}
+
+@keyframes backdropFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Product image placeholder gradients */
+.img-placeholder-cake {
+  background: linear-gradient(135deg, #F5E6CC 0%, #D4A0A7 50%, #B76E79 100%);
+}
+
+.img-placeholder-cupcake {
+  background: linear-gradient(135deg, #FFE8B0 0%, #FFD98F 50%, #F5E6CC 100%);
+}
+
+.img-placeholder-dessert {
+  background: linear-gradient(135deg, #E8DDD3 0%, #D4C4B0 50%, #B8A08A 100%);
+}
+
+.img-placeholder-cookie {
+  background: linear-gradient(135deg, #FFF3D1 0%, #FFE8B0 50%, #EDD9B5 100%);
+}
