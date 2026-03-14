@@ -77,22 +77,22 @@ export const products: Product[] = [
   // ── 3. Fusion Premium Cakes ───────────────────────────────────────────────
   { id: 'rasmalai_cake',           name: 'Rasmalai Cake',           category: 'Fusion Premium Cakes', bestseller: true, weights: [{ label: 'Half Kg', price: 680  }, { label: '1 Kg', price: 1260 }] },
   { id: 'gulab_jamun_cake',        name: 'Gulab Jamun Cake',        category: 'Fusion Premium Cakes', weights: [{ label: 'Half Kg', price: 620  }, { label: '1 Kg', price: 1240 }] },
-  { id: 'rose_milk_cake',          name: 'Rose Milk Cake',          category: 'Fusion Premium Cakes', weights: [{ label: 'Half Kg', price: 580  }, { label: '1 Kg', price: 1160 }] },
+  { id: 'rose_milk_cake',          name: 'Rose Milk Cake',          category: 'Fusion Premium Cakes', image: '/images/rose-cake.jpeg',             weights: [{ label: 'Half Kg', price: 580  }, { label: '1 Kg', price: 1160 }] },
   { id: 'badam_milk_cake',         name: 'Badam Milk Cake',         category: 'Fusion Premium Cakes', weights: [{ label: 'Half Kg', price: 600  }, { label: '1 Kg', price: 1200 }] },
-  { id: 'pistachio_cake',          name: 'Pistachio Cake',          category: 'Fusion Premium Cakes', weights: [{ label: 'Half Kg', price: 800  }, { label: '1 Kg', price: 1600 }] },
+  { id: 'pistachio_cake',          name: 'Pistachio Cake',          category: 'Fusion Premium Cakes', image: '/images/pistachio-choco-cake.jpeg',  weights: [{ label: 'Half Kg', price: 800  }, { label: '1 Kg', price: 1600 }] },
   { id: 'pistachio_white_truffle', name: 'Pistachio White Truffle', category: 'Fusion Premium Cakes', weights: [{ label: 'Half Kg', price: 940  }, { label: '1 Kg', price: 1880 }] },
   { id: 'nutty_butterscotch',      name: 'Nutty Butterscotch',      category: 'Fusion Premium Cakes', weights: [{ label: 'Half Kg', price: 600  }, { label: '1 Kg', price: 1200 }] },
   { id: 'elaneer_cake',            name: 'Elaneer Cake',            category: 'Fusion Premium Cakes', weights: [{ label: 'Half Kg', price: 620  }, { label: '1 Kg', price: 1240 }] },
 
   // ── 4. Exotic Cakes ───────────────────────────────────────────────────────
-  { id: 'ferrero_rocher_cake',        name: 'Ferrero Rocher Cake',        category: 'Exotic Cakes', bestseller: true, weights: [{ label: 'Half Kg', price: 880  }, { label: '1 Kg', price: 1760 }] },
+  { id: 'ferrero_rocher_cake',        name: 'Ferrero Rocher Cake',        category: 'Exotic Cakes', bestseller: true, image: '/images/ferrero-rocher-cake.jpeg', weights: [{ label: 'Half Kg', price: 880  }, { label: '1 Kg', price: 1760 }] },
   { id: 'rich_hazelnut_truffle',      name: 'Rich Hazelnut Truffle',      category: 'Exotic Cakes', weights: [{ label: 'Half Kg', price: 890  }, { label: '1 Kg', price: 1780 }] },
-  { id: 'kitkat_truffle',             name: 'KitKat Truffle',             category: 'Exotic Cakes', weights: [{ label: 'Half Kg', price: 750  }, { label: '1 Kg', price: 1500 }] },
+  { id: 'kitkat_truffle',             name: 'KitKat Truffle',             category: 'Exotic Cakes', image: '/images/kitkat-cake.jpeg',          weights: [{ label: 'Half Kg', price: 750  }, { label: '1 Kg', price: 1500 }] },
   { id: 'nutella_cake',               name: 'Nutella Cake',               category: 'Exotic Cakes', bestseller: true, weights: [{ label: 'Half Kg', price: 895  }, { label: '1 Kg', price: 1790 }] },
   { id: 'pinata_cake',                name: 'Pinata Cake',                category: 'Exotic Cakes', weights: [{ label: 'Half Kg', price: 700  }, { label: '1 Kg', price: 1400 }] },
   { id: 'triple_rich_choco',          name: 'Triple Rich Choco',          category: 'Exotic Cakes', weights: [{ label: 'Half Kg', price: 900  }, { label: '1 Kg', price: 1800 }] },
   { id: 'rich_caramel_white_truffle', name: 'Rich Caramel White Truffle', category: 'Exotic Cakes', weights: [{ label: 'Half Kg', price: 990  }, { label: '1 Kg', price: 1980 }] },
-  { id: 'brownie_slab',               name: 'Brownie Slab',               category: 'Exotic Cakes', weights: [{ label: 'Half Kg', price: 620  }, { label: '1 Kg', price: 1240 }] },
+  { id: 'brownie_slab',               name: 'Brownie Slab',               category: 'Exotic Cakes', image: '/images/brownie-tower.jpeg',        weights: [{ label: 'Half Kg', price: 620  }, { label: '1 Kg', price: 1240 }] },
 ];
 
 // ─── Derived Collections ──────────────────────────────────────────────────────
