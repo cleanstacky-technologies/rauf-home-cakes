@@ -16,7 +16,7 @@ export default function SchemaOrg() {
     name: BAKERY_NAME,
     alternateName: ['Rauf Cakes', 'Rauf Home Cakes Chromepet'],
     description:
-      'Premium custom cakes in Chrompet, Chennai by Fazila Ansari, Professional Baker. Birthdays, weddings, kids\' themed cakes & bento cakes. No premix. FSSAI certified. Order via WhatsApp.',
+      'Premium custom cakes in Chrompet, Chennai by Fazila Ansari, Professional Baker. Birthdays, weddings, kids\' themed cakes & bento cakes. No premix. FSSAI registered. Order via WhatsApp.',
     url: BASE_URL,
     telephone: BAKERY_PHONE,
     email: 'raufhomecakes@gmail.com',
@@ -123,7 +123,7 @@ export default function SchemaOrg() {
       },
       {
         '@type': 'Question',
-        name: 'Is Rauf Home Cakes FSSAI certified?',
+        name: 'Is Rauf Home Cakes FSSAI registered?',
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Yes, Rauf Home Cakes is FSSAI registered with licence number 22425423000394.',

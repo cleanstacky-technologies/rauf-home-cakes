@@ -5,15 +5,15 @@ import { BAKERY_NAME, BAKER_NAME, BAKER_TITLE, CUSTOMER_COUNT, GOOGLE_RATING, GO
 export const metadata: Metadata = {
   title: 'About Fazila Ansari — Professional Baker | Rauf Home Cakes, Chrompet',
   description:
-    'Rauf Home Cakes is run by Fazila Ansari, a professional baker in Chrompet, Chennai. FSSAI certified. No premix. Handcrafted custom cakes for birthdays & weddings. 2,000+ happy customers.',
+    'Rauf Home Cakes is run by Fazila Ansari, a professional baker in Chrompet, Chennai. FSSAI registered. No premix. Handcrafted custom cakes for birthdays & weddings. 2,000+ happy customers.',
   keywords: [
     'Fazila Ansari baker', 'professional baker Chrompet', 'home baker Chromepet',
-    'FSSAI certified bakery Chennai', 'no premix cakes Chennai',
+    'FSSAI registered bakery Chennai', 'no premix cakes Chennai',
     'best home baker Chennai', 'Rauf Home Cakes story',
   ],
   openGraph: {
     title: 'About Fazila Ansari | Rauf Home Cakes, Chrompet Chennai',
-    description: 'Professional baker Fazila Ansari. FSSAI certified. No premix. 2,000+ happy customers. Birthdays & weddings.',
+    description: 'Professional baker Fazila Ansari. FSSAI registered. No premix. 2,000+ happy customers. Birthdays & weddings.',
   },
 };
 
@@ -46,7 +46,7 @@ export default function AboutPage() {
                 <p className="font-serif font-bold text-chocolate-800 text-xl">{BAKER_NAME}</p>
                 <p className="text-xs text-rose-gold font-semibold tracking-widest uppercase">{BAKER_TITLE}</p>
                 <div className="flex flex-wrap gap-2 justify-center mt-2">
-                  {['FSSAI Certified', 'No Premix', 'Professional Baker', 'Chrompet, Chennai'].map(t => (
+                  {['FSSAI Registered', 'No Premix', 'Professional Baker', 'Chrompet, Chennai'].map(t => (
                     <span key={t} className="text-[10px] bg-white/80 text-chocolate-600 px-2 py-0.5 rounded-full font-medium">{t}</span>
                   ))}
                 </div>
@@ -80,7 +80,7 @@ export default function AboutPage() {
                 </p>
                 <p>
                   We specialise in <strong className="text-chocolate-800">custom birthday cakes, wedding cakes,
-                  kids' themed cakes, and bento cakes</strong> — all FSSAI certified, all made fresh per order,
+                  kids' themed cakes, and bento cakes</strong> — all FSSAI registered, all made fresh per order,
                   with a minimum 3-day advance notice to ensure perfection.
                 </p>
               </div>
@@ -119,7 +119,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
                 { icon: '🚫', title: 'No Premix', desc: 'Every cake made 100% from scratch. Real ingredients, real taste.' },
-                { icon: '🏅', title: 'FSSAI Certified', desc: 'Fully licensed food business. Reg: 22425423000394.' },
+                { icon: '🏅', title: 'FSSAI Registered', desc: 'Fully licensed food business. Reg: 22425423000394.' },
                 { icon: '🎂', title: 'Birthdays & Weddings', desc: 'Custom designs for every occasion — themed, floral, bento & more.' },
                 { icon: '✨', title: 'Fresh Per Order', desc: 'Baked fresh for your date. Never pre-made, never frozen.' },
               ].map((item, idx) => (

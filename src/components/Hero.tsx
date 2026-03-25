@@ -76,7 +76,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="body-lg max-w-xl mb-10"
           >
-            Premium custom cakes for birthdays, weddings & every celebration — by Fazila Ansari, Professional Baker. No premix. FSSAI certified. Made fresh in Chrompet, Chennai.
+            Premium custom cakes for birthdays, weddings & every celebration — by Fazila Ansari, Professional Baker. No premix. FSSAI registered. Made fresh in Chrompet, Chennai.
           </motion.p>
 
           <motion.div

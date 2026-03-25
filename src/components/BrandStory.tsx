@@ -22,7 +22,7 @@ export default function BrandStory() {
                   <p className="font-serif font-bold text-chocolate-800 text-xl mb-1">{BAKER_NAME}</p>
                   <p className="text-xs text-rose-gold font-semibold tracking-widest uppercase">{BAKER_TITLE}</p>
                   <div className="mt-4 flex flex-wrap justify-center gap-2">
-                    {['FSSAI Certified', 'No Premix', 'Professional Baker'].map(tag => (
+                    {['FSSAI Registered', 'No Premix', 'Professional Baker'].map(tag => (
                       <span key={tag} className="text-[10px] bg-white/70 text-chocolate-600 px-2 py-0.5 rounded-full font-medium">
                         {tag}
                       </span>
@@ -85,7 +85,7 @@ export default function BrandStory() {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-10 pt-8 border-t border-cream-200">
               {[
                 { icon: '🚫', label: 'No Premix' },
-                { icon: '🏅', label: 'FSSAI Certified' },
+                { icon: '🏅', label: 'FSSAI Registered' },
                 { icon: '🎂', label: 'Birthdays & Weddings' },
                 { icon: '💝', label: 'Made with Love' },
               ].map(item => (

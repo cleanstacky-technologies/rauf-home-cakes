@@ -3,11 +3,11 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Rauf Home Cakes | Custom Birthday & Celebration Cakes — Chromepet, Chennai',
   description:
-    'Order premium custom cakes online from Chromepet, Chennai. Birthday cakes, Red Velvet, Ferrero Rocher, Rasmalai, Black Forest & more. FSSAI certified. 100K+ happy customers. Order via WhatsApp in minutes.',
+    'Order premium custom cakes online from Chromepet, Chennai. Birthday cakes, Red Velvet, Ferrero Rocher, Rasmalai, Black Forest & more. FSSAI registered. 100K+ happy customers. Order via WhatsApp in minutes.',
   alternates: { canonical: 'https://www.raufhomecakes.com' },
   openGraph: {
     title: 'Rauf Home Cakes | Custom Cakes in Chromepet, Chennai',
-    description: 'Premium handcrafted cakes delivered in Chennai. Birthday, anniversary & custom designs. Order via WhatsApp. FSSAI certified.',
+    description: 'Premium handcrafted cakes delivered in Chennai. Birthday, anniversary & custom designs. Order via WhatsApp. FSSAI registered.',
     url: 'https://www.raufhomecakes.com',
   },
 };

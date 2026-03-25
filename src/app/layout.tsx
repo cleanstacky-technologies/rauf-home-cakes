@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    'Order premium custom cakes online from Rauf Home Cakes, Chromepet, Chennai. Birthday cakes, anniversary cakes, Red Velvet, Ferrero Rocher, Rasmalai cakes & more. FSSAI certified. Order via WhatsApp in minutes.',
+    'Order premium custom cakes online from Rauf Home Cakes, Chromepet, Chennai. Birthday cakes, anniversary cakes, Red Velvet, Ferrero Rocher, Rasmalai cakes & more. FSSAI registered. Order via WhatsApp in minutes.',
 
   keywords: [
     // Brand
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     'red velvet cake Chennai', 'ferrero rocher cake', 'rasmalai cake',
     'black forest cake Chennai', 'nutella cake', 'chocolate truffle cake',
     // Intent
-    'WhatsApp cake order', 'FSSAI certified bakery', 'custom birthday cake order',
+    'WhatsApp cake order', 'FSSAI registered bakery', 'custom birthday cake order',
     'cake pickup Chennai', '3 day advance cake order',
   ],
 
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     siteName: BAKERY_NAME,
     title: `${BAKERY_NAME} | Custom Cakes in Chromepet, Chennai`,
     description:
-      'Premium handcrafted custom cakes in Chromepet, Chennai. Birthday, anniversary & celebration cakes. Order via WhatsApp — pickup ready in 3 days. 100K+ Instagram followers. FSSAI certified.',
+      'Premium handcrafted custom cakes in Chromepet, Chennai. Birthday, anniversary & celebration cakes. Order via WhatsApp — pickup ready in 3 days. 100K+ Instagram followers. FSSAI registered.',
     images: [
       {
         url: '/images/logo.jpeg',
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: `${BAKERY_NAME} | Custom Cakes Chromepet, Chennai`,
     description:
-      'Handcrafted premium cakes in Chromepet, Chennai. Order via WhatsApp. FSSAI certified.',
+      'Handcrafted premium cakes in Chromepet, Chennai. Order via WhatsApp. FSSAI registered.',
     images: ['/images/logo.jpeg'],
   },
 
