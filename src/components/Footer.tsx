@@ -99,10 +99,10 @@ export default function Footer() {
             <ul className="space-y-3">
               {[
                 'Rich Chocolate Truffle',
-                'Red Velvet Cake',
-                'Ferrero Rocher Cake',
+                'Pistachio Cake',
                 'Rasmalai Cake',
-                'Nutella Cake',
+                'Ferrero Rocher Cake',
+                'Nutty Butterscotch',
               ].map(cake => (
                 <li key={cake}>
                   <Link

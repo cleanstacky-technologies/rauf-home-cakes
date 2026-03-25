@@ -15,17 +15,50 @@ export const metadata: Metadata = {
 import Hero from '@/components/Hero';
 import ProductGrid from '@/components/ProductGrid';
 import BrandStory from '@/components/BrandStory';
+import SpecialCakesCarousel from '@/components/SpecialCakesCarousel';
 import Testimonials from '@/components/Testimonials';
 import InstagramGallery from '@/components/InstagramGallery';
 import CorporateCTA from '@/components/CorporateCTA';
 import AnimatedSection from '@/components/AnimatedSection';
-import { featuredProducts, bestSellers, WHATSAPP_NUMBER } from '@/data/products';
+import FastSellingCard from '@/components/FastSellingCard';
+import { featuredProducts, fastSelling, WHATSAPP_NUMBER } from '@/data/products';
 import Link from 'next/link';
 
 export default function HomePage() {
   return (
     <>
       <Hero />
+
+
+      {/* Fast Selling */}
+      <section className="section-spacing bg-chocolate-900">
+        <div className="max-w-7xl mx-auto section-padding">
+          <AnimatedSection className="text-center mb-10 sm:mb-12">
+            <span className="inline-flex items-center gap-2 text-[10px] font-bold tracking-[0.25em] uppercase text-amber-400 mb-3">
+              <span className="w-5 h-px bg-amber-400" />
+              Fast Selling
+              <span className="w-5 h-px bg-amber-400" />
+            </span>
+            <h2 className="heading-lg text-white mb-3">
+              Flying Off the Shelf 🔥
+            </h2>
+            <p className="body-md text-cream-400 max-w-md mx-auto">
+              Our most ordered cakes this week — grab yours before they&apos;re gone.
+            </p>
+          </AnimatedSection>
+
+          {/* Mobile: horizontal scroll strip — Desktop: grid */}
+          <div className="flex gap-3 sm:gap-4 overflow-x-auto pb-3 sm:pb-0 scrollbar-hide sm:grid sm:grid-cols-3 lg:grid-cols-5 sm:overflow-x-visible">
+            {fastSelling.map((product, index) => (
+              <div key={product.id} className="flex-shrink-0 w-[68vw] min-w-[200px] max-w-[260px] sm:w-auto sm:max-w-none">
+                <AnimatedSection delay={index * 0.08}>
+                  <FastSellingCard product={product} rank={index + 1} />
+                </AnimatedSection>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Featured Products */}
       <section className="section-spacing bg-warm-50">
@@ -121,6 +154,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Special Occasion Cakes */}
+      <SpecialCakesCarousel />
 
       {/* Testimonials */}
       <Testimonials />

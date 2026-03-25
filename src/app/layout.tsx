@@ -86,11 +86,11 @@ export const metadata: Metadata = {
 
   icons: {
     icon: [
-      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.png', type: 'image/svg+xml' },
       { url: '/favicon.png', sizes: '32x32', type: 'image/png' },
     ],
-    shortcut: '/favicon.svg',
-    apple: [{ url: '/favicon.svg' }],
+    shortcut: '/favicon.png',
+    apple: [{ url: '/favicon.png' }],
   },
 
   // Geo meta for local SEO
