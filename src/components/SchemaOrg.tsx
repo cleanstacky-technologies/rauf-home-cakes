@@ -74,10 +74,10 @@ export default function SchemaOrg() {
         { '@type': 'Offer', itemOffered: { '@type': 'Product', name: 'Rich Chocolate Truffle', description: 'Premium Belgian chocolate truffle celebration cake' } },
       ],
     },
-    // FSSAI food safety licence
+    // FSSAI food safety registration
     identifier: {
       '@type': 'PropertyValue',
-      name: 'FSSAI License',
+      name: 'FSSAI Registration',
       value: '22425423000394',
     },
   };

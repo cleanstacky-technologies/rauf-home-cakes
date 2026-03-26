@@ -16,20 +16,23 @@ export default function AnimatedSection({
   delay = 0,
   direction = 'up',
 }: AnimatedSectionProps) {
+  // Smaller offsets → less layout shift, faster perceived animation
   const directionOffset = {
-    up: { y: 40 },
-    down: { y: -40 },
-    left: { x: 40 },
-    right: { x: -40 },
+    up:    { y: 20 },
+    down:  { y: -20 },
+    left:  { x: 20 },
+    right: { x: -20 },
   };
 
   return (
     <motion.div
       initial={{ opacity: 0, ...directionOffset[direction] }}
       whileInView={{ opacity: 1, x: 0, y: 0 }}
-      viewport={{ once: true, margin: '-80px' }}
+      // amount: 0.1 → fires as soon as 10% of element is visible (faster on mobile)
+      // margin removed → no extra IntersectionObserver root-margin calculation
+      viewport={{ once: true, amount: 0.1 }}
       transition={{
-        duration: 0.7,
+        duration: 0.45,   // was 0.7 — snappier on low-end devices
         delay,
         ease: [0.21, 0.47, 0.32, 0.98],
       }}

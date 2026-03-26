@@ -18,28 +18,16 @@ export default function Hero() {
       <div className="absolute bottom-0 left-0 w-[180px] sm:w-[300px] lg:w-[400px] h-[180px] sm:h-[300px] lg:h-[400px] rounded-full bg-cream-400/20 blur-3xl" />
       <div className="absolute top-1/3 left-1/4 w-[200px] h-[200px] rounded-full bg-rose-light/10 blur-2xl" />
 
-      {/* Floating decorative elements */}
-      <motion.div
-        animate={{ y: [-10, 10, -10] }}
-        transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
-        className="absolute top-32 right-[15%] text-6xl sm:text-7xl opacity-20 select-none"
-      >
+      {/* Floating decorative elements — pure CSS animation (no JS thread cost) */}
+      <div className="absolute top-32 right-[15%] text-6xl sm:text-7xl opacity-20 select-none animate-float-slow">
         🎂
-      </motion.div>
-      <motion.div
-        animate={{ y: [10, -10, 10] }}
-        transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
-        className="absolute bottom-32 left-[10%] text-5xl opacity-15 select-none hidden sm:block"
-      >
+      </div>
+      <div className="absolute bottom-32 left-[10%] text-5xl opacity-15 select-none hidden sm:block animate-float-mid">
         🧁
-      </motion.div>
-      <motion.div
-        animate={{ y: [-8, 8, -8], rotate: [0, 10, 0] }}
-        transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut' }}
-        className="absolute top-1/2 right-[8%] text-4xl opacity-10 select-none hidden lg:block"
-      >
+      </div>
+      <div className="absolute top-1/2 right-[8%] text-4xl opacity-10 select-none hidden lg:block animate-float-fast">
         🍰
-      </motion.div>
+      </div>
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto section-padding pt-28 sm:pt-32 pb-20">

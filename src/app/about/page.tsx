@@ -119,7 +119,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
                 { icon: '🚫', title: 'No Premix', desc: 'Every cake made 100% from scratch. Real ingredients, real taste.' },
-                { icon: '🏅', title: 'FSSAI Registered', desc: 'Fully licensed food business. Reg: 22425423000394.' },
+                { icon: '🏅', title: 'FSSAI Registered', desc: 'Fully registered food business. Reg: 22425423000394.' },
                 { icon: '🎂', title: 'Birthdays & Weddings', desc: 'Custom designs for every occasion — themed, floral, bento & more.' },
                 { icon: '✨', title: 'Fresh Per Order', desc: 'Baked fresh for your date. Never pre-made, never frozen.' },
               ].map((item, idx) => (

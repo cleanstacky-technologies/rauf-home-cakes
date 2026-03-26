@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
 import { Product } from '@/types';
 import ProductImage from './ProductImage';
 import CustomizationModal from './CustomizationModal';
@@ -21,11 +20,12 @@ export default function FastSellingCard({ product, rank }: Props) {
 
   return (
     <>
-      <motion.div
-        whileHover={{ y: -4 }}
-        transition={{ duration: 0.25, ease: 'easeOut' }}
+      {/* Plain div — motion.div whileHover intercepts touchmove on mobile
+          and breaks the parent horizontal-scroll strip. CSS handles the lift. */}
+      <div
         onClick={() => setModalOpen(true)}
-        className="relative bg-chocolate-800 rounded-2xl overflow-hidden cursor-pointer group border border-chocolate-700/60 hover:border-rose-gold/40 transition-colors duration-300"
+        className="relative bg-chocolate-800 rounded-2xl overflow-hidden cursor-pointer group border border-chocolate-700/60 hover:border-rose-gold/40 hover:-translate-y-1 active:scale-[0.98] transition-all duration-300"
+        style={{ touchAction: 'manipulation' }}
       >
         {/* Rank badge */}
         <div
@@ -77,7 +77,7 @@ export default function FastSellingCard({ product, rank }: Props) {
             </button>
           </div>
         </div>
-      </motion.div>
+      </div>
 
       <CustomizationModal
         product={product}

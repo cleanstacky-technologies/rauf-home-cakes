@@ -47,13 +47,16 @@ export default function HomePage() {
             </p>
           </AnimatedSection>
 
-          {/* Mobile: horizontal scroll strip — Desktop: grid */}
-          <div className="flex gap-3 sm:gap-4 overflow-x-auto pb-3 sm:pb-0 scrollbar-hide sm:grid sm:grid-cols-3 lg:grid-cols-5 sm:overflow-x-visible">
+          {/* Mobile: horizontal scroll strip — Desktop: grid
+              No AnimatedSection inside the strip: Framer Motion gesture handlers
+              intercept touchmove and break native horizontal scroll on mobile.   */}
+          <div
+            className="flex gap-3 sm:gap-4 overflow-x-auto pb-3 sm:pb-0 scrollbar-hide sm:grid sm:grid-cols-3 lg:grid-cols-5 sm:overflow-x-visible"
+            style={{ touchAction: 'pan-x pan-y', WebkitOverflowScrolling: 'touch' } as React.CSSProperties}
+          >
             {fastSelling.map((product, index) => (
               <div key={product.id} className="flex-shrink-0 w-[68vw] min-w-[200px] max-w-[260px] sm:w-auto sm:max-w-none">
-                <AnimatedSection delay={index * 0.08}>
-                  <FastSellingCard product={product} rank={index + 1} />
-                </AnimatedSection>
+                <FastSellingCard product={product} rank={index + 1} />
               </div>
             ))}
           </div>
