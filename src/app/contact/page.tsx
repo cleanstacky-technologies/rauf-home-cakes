@@ -99,15 +99,19 @@ export default function ContactPage() {
               {[
                 {
                   q: 'How do I place an order?',
-                  a: 'Browse our products, customize your cake, and click "Place Order". Your order details are automatically sent to our WhatsApp for confirmation.',
+                  a: 'Browse our products, customize your cake, and click "Place Order". Your order details are sent to our WhatsApp. For customizations, please confirm your requirements via WhatsApp first. Orders are confirmed only after full payment.',
                 },
                 {
                   q: 'How far in advance should I order?',
-                  a: 'We require a minimum of 3 days advance notice. For custom designs or large orders, we recommend 5-7 days.',
+                  a: 'We require a minimum of 3 days advance notice. For custom designs or large orders, we recommend 5–7 days. All orders must be fully paid and pre-booked after placing via WhatsApp.',
                 },
                 {
                   q: 'Do you deliver?',
-                  a: 'Currently we offer pickup only. The exact pickup address is shared after order confirmation on WhatsApp.',
+                  a: 'We can arrange delivery via Porter or Uber if the customer is willing to bear the delivery charges. Pickup from our location is also available — exact address shared on WhatsApp after order confirmation.',
+                },
+                {
+                  q: 'What are your working hours?',
+                  a: 'We are available every day from 7:30 AM to 9:00 PM. Place your order or reach us on WhatsApp during these hours.',
                 },
                 {
                   q: 'Can I get an eggless cake?',
@@ -115,7 +119,7 @@ export default function ContactPage() {
                 },
                 {
                   q: 'What payment methods do you accept?',
-                  a: 'Payment is made at the time of pickup. We accept UPI, cash, and bank transfer. No advance payment needed for standard orders.',
+                  a: 'We accept UPI, cash, and bank transfer. Full payment is required to confirm your order. No order is processed without complete payment.',
                 },
               ].map((faq, idx) => (
                 <div key={idx} className="bg-white rounded-2xl p-5 sm:p-6 shadow-sm">

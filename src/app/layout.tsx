@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
 import SchemaOrg from '@/components/SchemaOrg';
 import { CartProvider } from '@/components/CartProvider';
+import ScrollToTop from '@/components/ScrollToTop';
 import { BAKERY_NAME, BAKERY_TAGLINE, BAKERY_LOCATION } from '@/data/products';
 
 const BASE_URL = 'https://www.raufhomecakes.com';
@@ -127,6 +128,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen flex flex-col">
         <SchemaOrg />
+        <ScrollToTop />
         <CartProvider>
           <Header />
           <main className="flex-1">{children}</main>

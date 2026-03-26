@@ -46,10 +46,15 @@ export default function SpecialCakesCarousel() {
     return () => clearTimeout(t);
   }, [current, isPaused, next]);
 
-  // Keep active thumbnail in view
+  // Keep active thumbnail in view — scroll only within the strip, not the page
   useEffect(() => {
-    const el = thumbsRef.current?.children[current] as HTMLElement | undefined;
-    el?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    const strip = thumbsRef.current;
+    const el = strip?.children[current] as HTMLElement | undefined;
+    if (!strip || !el) return;
+    const stripRect = strip.getBoundingClientRect();
+    const elRect    = el.getBoundingClientRect();
+    const offset    = elRect.left - stripRect.left - stripRect.width / 2 + elRect.width / 2;
+    strip.scrollBy({ left: offset, behavior: 'smooth' });
   }, [current]);
 
   // Touch swipe

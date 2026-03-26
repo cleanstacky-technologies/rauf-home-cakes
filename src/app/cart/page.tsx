@@ -380,8 +380,7 @@ export default function CartPage() {
                 </button>
 
                 <p className="text-[10px] text-chocolate-300 text-center mt-3 leading-relaxed">
-                  Your order summary is sent directly to our WhatsApp.
-                  No payment needed now — pay at pickup.
+                  Orders are confirmed after full payment only. For customizations, please confirm your requirements via WhatsApp first.
                 </p>
               </div>
             </div>

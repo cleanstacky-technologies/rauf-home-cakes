@@ -42,7 +42,7 @@ export default function SchemaOrg() {
       {
         '@type': 'OpeningHoursSpecification',
         dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-        opens: '09:00',
+        opens: '07:30',
         closes: '21:00',
       },
     ],

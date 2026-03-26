@@ -15,16 +15,14 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2.5 mb-4">
-              {/* Logo mark — white tinted for dark footer */}
-              <div className="relative h-10 w-10 flex-shrink-0 brightness-0 invert opacity-90" style={{ position: 'relative' }}>
-                <Image
-                  src="/images/logo.jpeg"
-                  alt="Rauf Home Cakes logo"
-                  width={40}
-                  height={40}
-                  className="object-contain rounded-sm w-10 h-10"
-                />
-              </div>
+              {/* Logo mark — white SVG version for dark footer */}
+              <Image
+                src="/images/logo-white.svg"
+                alt="Rauf Home Cakes logo"
+                width={40}
+                height={40}
+                className="object-contain w-10 h-10 flex-shrink-0"
+              />
               <div className="flex flex-col leading-none">
                 <span className="font-serif text-lg font-bold text-white tracking-tight">
                   Rauf Home
