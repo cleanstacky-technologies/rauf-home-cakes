@@ -118,7 +118,7 @@ export default function Hero() {
                 <span className="w-px h-2.5 bg-green-300" />
                 <span className="text-[8px] sm:text-[9px] text-green-600 font-mono truncate">{FSSAI_REG}</span>
               </div>
-              <p className="text-[10px] text-chocolate-400 tracking-wide pl-0.5">Licensed &amp; Certified</p>
+              {/* <p className="text-[10px] text-chocolate-400 tracking-wide pl-0.5">Licensed &amp; Certified</p> */}
             </div>
           </motion.div>
         </div>

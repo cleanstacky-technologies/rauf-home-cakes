@@ -6,7 +6,7 @@
 
 import { BAKERY_NAME, BAKERY_PHONE, BAKERY_LOCATION, WHATSAPP_NUMBER, INSTAGRAM_HANDLE, GOOGLE_REVIEWS } from '@/data/products';
 
-const BASE_URL = 'https://www.raufhomecakes.com'; // update when deployed
+const BASE_URL = 'https://www.raufhomecakespremium.in';
 
 export default function SchemaOrg() {
   const localBusiness = {

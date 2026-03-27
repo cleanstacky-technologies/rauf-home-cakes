@@ -8,7 +8,7 @@ import { CartProvider } from '@/components/CartProvider';
 import ScrollToTop from '@/components/ScrollToTop';
 import { BAKERY_NAME, BAKERY_TAGLINE, BAKERY_LOCATION } from '@/data/products';
 
-const BASE_URL = 'https://www.raufhomecakes.com';
+const BASE_URL = 'https://www.raufhomecakespremium.in';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),

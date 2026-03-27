@@ -4,11 +4,11 @@ export const metadata: Metadata = {
   title: 'Rauf Home Cakes | Custom Birthday & Celebration Cakes — Chromepet, Chennai',
   description:
     'Order premium custom cakes online from Chromepet, Chennai. Birthday cakes, Red Velvet, Ferrero Rocher, Rasmalai, Black Forest & more. FSSAI registered. 100K+ happy customers. Order via WhatsApp in minutes.',
-  alternates: { canonical: 'https://www.raufhomecakes.com' },
+  alternates: { canonical: 'https://www.raufhomecakespremium.in' },
   openGraph: {
     title: 'Rauf Home Cakes | Custom Cakes in Chromepet, Chennai',
     description: 'Premium handcrafted cakes delivered in Chennai. Birthday, anniversary & custom designs. Order via WhatsApp. FSSAI registered.',
-    url: 'https://www.raufhomecakes.com',
+    url: 'https://www.raufhomecakespremium.in',
   },
 };
 
